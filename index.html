@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Apps Hitung Diskon Belanja</title>
-    <script>alert('Username: Admin && Password: 12345')</script>
+    <title>Login System</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="container">
-        <h1>Welcome Back</h1>
-        <p>Silahkan masukkan username dan password untuk mengakses akun Anda</p>
-        <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" placeholder="Contoh: Admin">
-        </div>
+        <div class="card">
+            <h1>Login System</h1>
+            <p>Login untuk melanjutkan</p>
 
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" placeholder="••••••••">
-        </div>
+            <div class="input-group">
+                <input type="text" id="username" required>
+                <label>Username</label>
+            </div>
 
-        <button onclick="loginSystem()">Sign In</button>
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label>Password</label>
+            </div>
+
+            <button onclick="handleLogin()">Login</button>
+        </div>
     </div>
 
-
-    <!-- js connect -->
     <script src="script.js"></script>
-
-    <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
